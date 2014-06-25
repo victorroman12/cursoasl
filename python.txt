@@ -1,0 +1,22 @@
+Buenas noches,
+
+Debo excusarme con la solución propuesta para este error, ya que al parecer sigue sucediendo tanto al hacer "aptitude safe-upgrade" como "aptitude full-upgrade". La solución temporal es algo más complicada:
+
+Se deben descargar estos tres paquetes:
+
+(Para arquitectura i386)
+http://paquetes.canaima.softwarelibre.gob.ve/pool/main/p/python2.7/python2.7-minimal_2.7.3-6+deb7u2_i386.deb
+http://paquetes.canaima.softwarelibre.gob.ve/pool/main/p/python2.7/libpython2.7_2.7.3-6+deb7u2_i386.deb
+http://paquetes.canaima.softwarelibre.gob.ve/pool/main/p/python2.7/python2.7_2.7.3-6+deb7u2_i386.deb
+
+ó
+
+(Para arquitectura amd64)
+http://paquetes.canaima.softwarelibre.gob.ve/pool/main/p/python2.7/python2.7-minimal_2.7.3-6+deb7u2_amd64.deb
+http://paquetes.canaima.softwarelibre.gob.ve/pool/main/p/python2.7/libpython2.7_2.7.3-6+deb7u2_amd64.deb
+http://paquetes.canaima.softwarelibre.gob.ve/pool/main/p/python2.7/python2.7_2.7.3-6+deb7u2_amd64.deb
+
+E instalar manualmente de la siguiente forma (en un terminal de root):
+
+cd /ruta/a/la/carpeta/de/descargas/
+dpkg -i *.de
